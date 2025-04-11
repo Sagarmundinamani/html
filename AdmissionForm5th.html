@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Admission Form - Class 5</title>
+</head>
+<body>
+
+  <h2 title="Admission" style="background-color: rgb(228, 99, 190);">Admission Form for Class 5</h2>
+  <hr>
+  <form>
+    <fieldset style="background-color: aqua;">
+      <legend style="background-color: rgb(241, 16, 16);"><b>Personal Information</b></legend>
+      <label for="student-name">Student Name</label>
+      <input type="text" id="student-name" name="student_name"><br>
+      <br>
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob">
+    <br>
+    <br>
+      <label>Gender</label>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="others"> Others<br>
+
+      <br>
+
+      <label for="father-name">Father's Name</label>
+      <input type="text" id="father-name" name="father_name"><br>
+      <br>
+
+      <label for="mother-name">Mother's Name</label>
+      <input type="text" id="mother-name" name="mother_name"><br>
+      <br>
+
+      <label for="contact">Contact Number</label>
+      <input type="number" id="contact" name="contact"><br>
+      <br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"><br>
+      <br>
+    </fieldset>
+
+    <fieldset style="background-color: aqua;">
+      <legend  style="background-color: rgb(241, 16, 16);"><b>Address Information</b></legend>
+      <label for="city">City</label>
+      <input type="text" id="city" name="city"><br>
+      <br>
+      <label for="state">State</label>
+      <input list="state-options" id="state" name="state">
+      <datalist id="state-options">
+        <option value="Karnataka"></option>
+        <option value="Rajasthan"></option>
+        <option value="Kerala"></option>
+        <option value="Tamil Nadu"></option>
+      </datalist><br>
+      <br>
+
+      <label for="address">Complete Address</label>
+      <textarea id="address" name="address" rows=""></textarea>
+    </fieldset>
+
+    <fieldset style="background-color: aqua;">
+      <legend style="background-color: rgb(253, 18, 18);"><b>School Information</b></legend>
+      <label for="prev-school">Previous School Name</label>
+      <input type="text" id="prev-school" name="previous_school"><br>
+      <br>
+
+      <label for="last-class">Last Class Attended</label>
+      <input type="text" id="last-class" name="last_class"><br>
+      <br>
+
+      <label>Subjects Interested In</label>
+      <input type="checkbox" name="subjects" value="English"> English
+      <input type="checkbox" name="subjects" value="Math"> Math
+      <input type="checkbox" name="subjects" value="Science"> Science<br>
+      <br>
+
+      <label for="year-of-joining">Year of Admission</label>
+      <input type="number" id="year-of-joining" name="year_of_joining">
+    </fieldset>
+
+    <fieldset style="background-color: aqua;">
+      <legend style="background-color: rgb(243, 8, 8);"><b>Other Details</b></legend>
+      <label for="photo">Upload Passport Size Photo</label>
+      <input type="file" id="photo" name="photo"><br>
+      <br>
+
+      <label for="fav-color">T-Shirt Color Preference</label>
+      <input type="color" id="fav-color" name="tshirt_color"><br>
+      <br>
+
+      <label for="transport">Require School Transport?</label>
+      <select id="transport" name="transport">
+        <option value="">Select</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </fieldset>
+
+    <button type="submit" class="submit-btn" style="background-color: rgb(238, 15, 15);">Submit Application</button>
+  </form>
+
+</body>
+</html>
