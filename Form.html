@@ -11,29 +11,29 @@
             <legend style="background-color: rgb(235, 22, 22);"><b>Personal information</b></legend>
         <div>
             <label for="name"><b>Name</b></label>
-            <input type="text" id="name" style="background-color: aqua;">
+            <input type="text" id="name" name="name" style="background-color: aqua;" min="2" required placeholder="enter name">
         </div>
         <br>
         <div>
             <label for="dob"><b>DOB</b></label>
-            <input type="date" id="dob" style="background-color: aqua;">
+            <input type="date" id="dob" name="dob"   style="background-color: aqua;" min="2000-04-04" max="2004-04-04">
         </div>
         <br>
         <div>
             <label for="contact"><b>Contact</b></label>
-            <input type="number" id="contact" style="background-color: aqua;">
+            <input type="" id="contact" name="contact"  style="background-color: aqua;" min="10" max="10" placeholder="enter contact">
         </div>
         <br>
         <div>
             <label for="email"><b>Email</b></label>
-            <input type="email" id="email" style="background-color: aqua;">
+            <input type="email" id="email"  name="email"  style="background-color: aqua;" required placeholder="enter email">
         </div>
         <br>
         <div>
         <label for="gender"><b>gender</b></label><br>
-        male<input type="radio" name="gender" id="gender" style="background-color: aqua;">
-        female<input type="radio" name="gender" id=" " style="background-color: aqua;">
-        others<input type="radio" name="gender" id="" style="background-color: aqua;">
+        male<input type="radio" name="gender" id="gender" style="background-color: aqua;" value="male">
+        female<input type="radio" name="gender" id=" " style="background-color: aqua;" value="female">
+        others<input type="radio" name="gender" id="" style="background-color: aqua;" value="others">
     </div>
 </fieldset >
 <br>
@@ -41,37 +41,37 @@
     <legend style="background-color: rgb(235, 22, 22);"><b>Educational information</b></legend>
     <div>
         <label for="skills"><b>Skills</b></label><br>
-       HTML<input type="checkbox" id="skills" style="background-color: aqua;">
-       CSS<input type="checkbox" id="skills" style="background-color: aqua;">
-       JAVASCRIPT<input type="checkbox" id="skills" style="background-color: aqua;">
+       HTML<input type="checkbox" id="skills" style="background-color: aqua;" name="skills" value="HTML">
+       CSS<input type="checkbox" id="skills" style="background-color: aqua;" name="skills" value="CSS">
+       JAVASCRIPT<input type="checkbox" id="skills" style="background-color: aqua;" name="skills" value="JAVASCRIPT">
 
     </div>
     <br>
     <div>
         <label for="heighstdegree"><b>heighstdegree</b></label>
-        <select type=""  id="" style="background-color: aqua;">
+        <select type="TEXT"  id="" style="background-color: aqua;" name="heighstdegree">
             <option value="">select degree</option>
-            <option value="">B.tech</option>
-            <option value="">B.E</option>
-            <option value="">Bsc</option>
-            <option value="">Msc</option>
+            <option value="B.tech">B.tech</option>
+            <option value="B.E">B.E</option>
+            <option value="Bsc">Bsc</option>
+            <option value="Msc">Msc</option>
         </select>
     </div><br>
     <div>
         <label for="yearofpassing"><b>yearofpassing</b></label>
-        <input type="number" id="yearofpassing" style="background-color: aqua;">
+        <input type="number" id="yearofpassing" style="background-color: aqua;" name="yearofpassing" min="2000" max="2005">
     </div>
 </fieldset>
 <fieldset style="background-color: rgb(166, 189, 189);">
     <legend style="background-color: rgb(235, 22, 22);"><b>Adress</b></legend>
     <div>
         <label for="city"><b>City</b></label>
-        <input type="text" id="city"  style="background-color: aqua;">
+        <input type="text" id="city"  style="background-color: aqua;" name="city" min="2">
     </div>
     <br>
     <div>
         <label for="state"><b>State</b></label>
-        <input list="state" style="background-color: aqua;">
+        <input list="state" style="background-color: aqua;" name="state">
         <datalist id="state">
             <option value="karnatak"></option>
             <option value="Rajastan"></option>
@@ -83,35 +83,41 @@
         <br>
         <div>
             <label for="completeaddress"><b>completeaddress</b></label><br>
-            <textarea name="" id=""> </textarea>      
+            <textarea name="completeaddress" id=""> </textarea>      
         </div>
 </fieldset>
 <fieldset style="background-color: rgb(166, 189, 189);">
     <legend style="background-color: rgb(235, 22, 22);"><b>Others details</b></legend>
     <div>
         <label for="cv"><b>cv</b></label>
-        <input type="file" style="background-color: aqua;">
+        <input type="file" style="background-color: aqua;" name="cv">
     </div>
     <br>
     <div>
         <label for="tshirt"><b>tshirt</b></label>
-        <input type="color" style="background-color: aqua;">
+        <input type="color" style="background-color: aqua;" name="tshirt">
     </div>
     <br>
     <div>
         <label for="car"><b>Car</b></label>
         <select name=" " id=" ">
             <optgroup label="Mahindra">
-                <option value="">Thar</option>
-                <option value="">xuv 700</option>
-                <option value="">Scrapio</option>
+                <option value="Thar">Thar</option>
+                <option value="xuv 700">xuv 700</option>
+                <option value="SScrapioo">Scrapio</option>
             </optgroup>
             <optgroup label="Toyata">
-                <option value=" ">fortuner</option>
-                <option value=" ">supra</option>
+                <option value=" fortuner">fortuner</option>
+                <option value="supra ">supra</option>
             </optgroup>
         </select>
     </div>
-    </form>
+    <br>
+</fieldset>
+<div>
+    <button type="submit" class="submit-btn" style="background-color: rgb(238, 15, 15);">Submit</button>
+</div>  
+</form>
+
 </body>
 </html>
